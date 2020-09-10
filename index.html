@@ -38,7 +38,7 @@
         <tbody>
         <tr>
             <td>1</td>
-            <td>Agile software development</td>
+            <td><a href="https://courses.cs.ut.ee/2020/ASD/fall" target="_blank"> Agile software development </a></td>
             <td>Semester 1 fall</td>
             <td>82</td>
         </tr>
@@ -61,15 +61,39 @@
             <td>65</td>
         </tr>
         </tbody>
+		<tfoot>
+		  <tr>
+		    <td colspan="4">
+			<button type="button"> Add new course </button>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+			<form> 
+				<label for="title"> Enter the Title </label>
+				<input placeholder="Enter the title: " type="text" id="title">
+				<br>
+				<label for="semester"> Select the Semester </label>
+				<select id="semester">
+					<option name="fall" value="semester1"> Semester 1 fall </option>
+					<option name="spring" value="semester2"> Semester 1 spring </option>
+					<option value="semester3"> Semester 2 fall </option>
+					<option value="semester4"> Semester 2 spring </option>
+				</select>
+				<br>	
+				<label for="grade"> Grade </label>
+				<input type="number" id="grade" min="0" max="100">
+		  </tr>
+		</tfoot>
     </table>
 </section>
 <footer>
     <ul>
         <li>
-            <a href="https://ois2.ut.ee/">OIS</a>
+            <a target="_blank" href="https://ois2.ut.ee/">OIS</a>
         </li>
         <li>
-            <a href="https://courses.cs.ut.ee/">Courses</a>
+            <a target="_blank" href="https://courses.cs.ut.ee/">Courses</a>
         </li>
     </ul>
 </footer>
